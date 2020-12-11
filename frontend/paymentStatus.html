@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {{if .AllPembayaran}}
+    {{range .AllPembayaran}}
+    <h3>{{.IDPembayaran}}</h3>
+    <h3>{{.JenisPembayaran}}</h3>
+    {{end}}
+    {{else}}
+        <h3 style="text-align: center; font-family: Helvetica;">Pembayaran tidak ditemukan, silahkan konfirmasi ke pihak Mihaya atau melakukan pembayaran</h3>
+    {{end}}
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h2 style="color: aqua; text-align: center; font-family: 'Courier New', Courier, monospace;"></h2>
+    {{if .AllPelanggan}}
+    {{range .AllPelanggan}}
+    Welcome, {{.Nama}}
+    {{end}}
+    {{else}}
+    <h2>Email yang dicari tidak terdaftar, ingin daftar akun?</h2>
+    <a href="/register">Klik disini untuk mendaftar</a>
+    {{end}}    
+    <form action="/custlogin" method="GET">
+        <input type="submit">
+    </form>    
+</body>
+</html>

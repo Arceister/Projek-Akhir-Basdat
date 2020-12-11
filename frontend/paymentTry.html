@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Isi Keterangan Produk yang akan dijual:
+    <br>
+    <form action="/payconfirm" method="POST">
+        <label for="id">ID Pembayaran:</label><br>
+        <input type="text" name="id" id = "id" maxlength="10">
+        <br>
+
+        <label for="idc">ID Pelanggan:</label><br>
+        <input type="text" name="idpelanggan" id = "idc" maxlength="10">
+        <br>
+
+        <label for="idp">ID Pesanan:</label><br>
+        <input type="text" name="idpesanan" id = "idp" maxlength="10">
+        <br>
+
+        <label for="rek">No Rek Penerima:</label><br>
+        <input type="text" name="norek" id = "rek" maxlength="10">
+        <br>
+
+        <label for="mtd">Metode Pembayaran:</label><br>
+        <input type="text" name="metode" id = "mtd" maxlength="10">
+        <br>
+
+        <input type="submit" value="Bayar">
+    </form>
+</body>
+</html>

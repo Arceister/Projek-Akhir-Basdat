@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--{{range .Sucess}}
+    {{.}}<br>
+    {{end}}-->
+    <h2>Cari Produk yang anda inginkan:</h2>
+    <form action="/prodsearch" method="POST">
+        <label for="em">Nama Produk:</label><br>
+        <input type="text" name="prod" id = "em" placeholder="Cari">
+
+        <input type="submit" value="Cari">
+    </form>
+
+    <h2>Beli Produk?</h2>
+    <a href="/buyproduct">Klik disini untuk membeli produk</a>
+</body>
+</html>

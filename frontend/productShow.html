@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+
+<body>
+    <table style="width:100%">
+        <tr>
+            <th>ID Produk</th>
+            <th>Nama Produk</th>
+            <th>Jenis</th>
+            <th>Harga</th>
+            <th>Stock</th>
+        </tr>
+        {{range .Product}}
+        <tr>
+            <th>{{.IDProduk}}</th>
+            <th>{{.Nama}}</th>
+            <th>{{.Jenis}}</th>
+            <th>{{.Harga}}</th>
+            <th>{{.Stok}}</th>
+        </tr>
+        {{end}}
+    </table>
+    <h3><a href="/shopping">Kembali ke Pencarian</a></h3>
+</body>
+
+</html>

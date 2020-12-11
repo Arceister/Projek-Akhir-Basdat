@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mihaya</title>
+    <style>
+        body {
+            background-color: #8AFFFF;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .column {
+            float: left;
+            width: 50%;
+            padding: 10px;
+            height: 300px;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .shopping {
+            float: left;
+            width: 100%;
+            padding: 10px;
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="color: darkblue; font-family: Helvetica;">Selamat datang di Mihaya!</h1>
+    <div class="row">
+        <div class="column" style="background-color: aqua;">
+            <h2>Customer Login Page:</h2>
+            <a href="/custlogin">Klik disini untuk Login</a>
+            <br>
+            <br>
+            Belum memiliki akun?<br>
+            <a href="/register">Klik disini untuk mendaftar</a>
+            <br>
+            <a href="/payment">Laman Pembayaran</a>
+        </div>
+        <div class="column" style="background-color: #5CFFFF;">
+            <h2>Seller Login Page:</h2>
+            <a href="/sellerlogin">Klik disini untuk Login</a>
+            <br>
+            <br>
+            Belum memiliki akun?<br>
+            <a href="/registerseller">Klik disini untuk mendaftar</a>
+        </div>
+    </div>
+    <div class="shopping" style="background-color: #15f2fd;">
+        <h2 style="text-align: center;">Mulai Belanja Sekarang Juga!</h2>
+        <h3 style="text-align: center;">Tidak perlu memiliki akun untuk belanja! (Karena memang tidak ada Auth)</h3>
+        <p style="text-align: center;"><a href="/shopping">Klik disini untuk mulai belanja</a></p>
+    </div>
+    <div class="shopping" style="background-color: #b1fafe;">
+        <h2 style="text-align: center;">Mulai Jual Barang Anda Sekarang!</h2>
+        <h3 style="text-align: center;">Tidak perlu memiliki akun untuk menjual barang! (Karena memang tidak ada Auth)</h3>
+        <p style="text-align: center;"><a href="/sellproduct">Klik disini untuk mulai menjual</a></p>
+    </div>
+</body>
+
+</html>
